@@ -1,0 +1,23 @@
+<button (click)="onclickme()" > Click ME </button>
+
+<div class="container">  
+    
+  <h1> Todo items List </h1>  
+    
+  <table class="table table-striped">  
+    <thead>  
+        <tr>  
+          <th>ID</th>  
+          <th>Name</th>  
+          <th>IsComplete</th>            
+        </tr>  
+    </thead>  
+    <tbody>  
+      <tr *ngFor="let todoItem of todoItems">  
+        <td>{{ todoItem.id }}</td>  
+        <td>{{ todoItem.name }}</td>  
+        <td>{{ todoItem.isComplete }}</td>        
+      </tr>  
+    </tbody>  
+  </table>  
+</div>  
